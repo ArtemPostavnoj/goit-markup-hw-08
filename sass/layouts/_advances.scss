@@ -1,5 +1,6 @@
 .advances{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .advances__title{  
@@ -17,7 +18,15 @@
     letter-spacing: 0.03em;
 }
 .advances__list{
-    width: 270px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+        
+    }
 }
 .advances__style{
     background-color: #F5F4FA;
