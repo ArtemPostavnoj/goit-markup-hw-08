@@ -5,6 +5,10 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .title{
     color: #212121;
 }
@@ -17,6 +21,7 @@ body{
 .current{
     color: #2196F3;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;

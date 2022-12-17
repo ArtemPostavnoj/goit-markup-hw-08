@@ -223,6 +223,7 @@ ul{
 }
 .advances{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .advances__title{  
@@ -242,6 +243,7 @@ ul{
 .advances__list{
     width: 270px;
 }
+
 .advances__style{
     background-color: #F5F4FA;
     width: 270px;

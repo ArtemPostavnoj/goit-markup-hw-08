@@ -1,5 +1,6 @@
 .container-team__list{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .container-team__title{
@@ -19,10 +20,21 @@
 }
 .container-team{
     text-align: center;
-      
+    padding-left: auto;
+    padding-right: auto;  
 }
 .section-team{
     background-color:#F5F4FA ;
+    @media screen and (min-width: 768px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		
+	}
+	@media screen and (min-width: 1200px) {
+	padding-top: 120px;
+	padding-bottom: 120px;	
+		
+	}
 }
 .team-content{
     background: #FFFFFF;
