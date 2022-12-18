@@ -92,6 +92,7 @@ footer{
     display: flex; 
     align-items: baseline;
     flex-direction: column;
+    justify-content: center;
     @media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
@@ -148,6 +149,9 @@ footer{
 }
 .container-footer-icon{
     margin-left: 70px;
+    
+    
+    
 }
 .sign-title{
     font-weight: 700;

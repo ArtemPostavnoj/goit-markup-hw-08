@@ -364,7 +364,14 @@ body {
 }
 
 .navigation {
+  display: flex;
   margin-right: auto;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
 }
 
 .navigation__link {
@@ -542,7 +549,6 @@ body {
 .section-working {
   padding-top: 0;
   text-align: center;
-  width: 1199px;
   padding-bottom: 94px;
   display: none;
 }
@@ -821,6 +827,7 @@ footer {
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .container-contacts-footer {
