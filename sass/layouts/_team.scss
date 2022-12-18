@@ -90,3 +90,9 @@
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
+.team-soc__link:hover .team-soc__icon {
+    fill: #FFFFFF;
+}
+.team-soc__link:focus .team-soc__icon{
+    fill: #FFFFFF;
+}

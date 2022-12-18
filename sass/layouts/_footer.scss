@@ -12,6 +12,9 @@ footer{
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     display: block;
+    @media screen and (min-width: 1200px) {
+		display: inline-block;
+	}
 }
 .logo-web-footer{
     color: #2196F3;
@@ -40,6 +43,7 @@ footer{
 }
 
 .contacts-footer{
+    display: block;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-weight: 400;
@@ -51,6 +55,9 @@ footer{
     &:focus{
     color: #2196F3;
    }
+   @media screen and (min-width: 1200px) {
+	display: inline-block;
+}
 }
 
 .footer{
@@ -84,6 +91,18 @@ footer{
     margin: 0 auto; 
     display: flex; 
     align-items: baseline;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-direction: row;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 .icons-footer{
     font-weight: 700;
@@ -94,6 +113,9 @@ footer{
     color: #FFFFFF;
     margin-bottom: 20px;
     display: block;
+    @media screen and (min-width: 1200px) {
+		display: inline-block;
+	}
 }
 .footer-soc-item{
     width: 44px;
@@ -136,9 +158,24 @@ footer{
     color: #FFFFFF;
     margin-bottom: 20px;
     display: block;
+    @media screen and (min-width: 1200px) {
+		display: inline-block;
+	}
 }
 .sent-form{
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-direction: row;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 .input-footer{
     width: 358px;
@@ -154,6 +191,14 @@ footer{
     &:hover{
     border-color: #2196F3;
    }
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+}
 }
 
 .input-footer::placeholder{
@@ -188,4 +233,25 @@ footer{
 }
 .address a{
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .footer-form{
+    display: flex;
+	flex-direction: column;
+	gap: 12px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		
+	}
+  }
+  .footer-list-2{
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 9px;
   }
