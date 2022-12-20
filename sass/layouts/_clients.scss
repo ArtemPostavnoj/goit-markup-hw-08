@@ -6,7 +6,7 @@
     padding: 0;
 }
 .clients-item{
-    width: 100%;
+    width: calc((100% - 30px) / 2);;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -15,10 +15,7 @@
     &:focus{
     border-color: #2196F3;
     }
-    @media screen and (min-width: 480px) {
-		width: calc((100% - 30px) / 2);
-		
-	}
+   
 	@media screen and (min-width: 768px) {
 		width: calc((100% - 60px) / 3);
 		
