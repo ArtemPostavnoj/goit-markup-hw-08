@@ -12,8 +12,9 @@ footer{
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     display: block;
+    text-align: center;
     @media screen and (min-width: 1200px) {
-		display: inline-block;
+		text-align: start;
 	}
 }
 .logo-web-footer{
@@ -27,6 +28,10 @@ footer{
 }
 .footer-list{
     margin-bottom: 9px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 .address{
     color: #FFFFFF;
@@ -85,24 +90,22 @@ footer{
 }
 
 .container-contacts-footer{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto; 
-    display: flex; 
-    align-items: baseline;
-    flex-direction: column;
-    justify-content: center;
+    // width: 1200px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin: 0 auto; 
+    // display: flex; 
+    // align-items: baseline;
+    // flex-direction: column;
+    // justify-content: center;
     @media screen and (min-width: 768px) {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: baseline;
-		flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
 	}
 	@media screen and (min-width: 1200px) {
-		display: flex;
-		flex-direction: row;
+        justify-content: space-between;
 	}
 }
 .icons-footer{
@@ -113,9 +116,11 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    display: block;
+    margin-top: 60px;
+    text-align: center;
     @media screen and (min-width: 1200px) {
-		display: inline-block;
+		text-align: start;
+        margin-top: 0;
 	}
 }
 .footer-soc-item{
@@ -125,6 +130,8 @@ footer{
 .footer-soc-list{
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .footer-soc-icon{
     fill: #FFFFFF;
@@ -161,28 +168,33 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    display: block;
+    margin-top: 60px;
+    text-align: center;
     @media screen and (min-width: 1200px) {
-		display: inline-block;
+		text-align: start;
+        margin-top: 0;
 	}
 }
 .sent-form{
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: baseline;
-		flex-direction: row;
-	}
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		flex-direction: row;
-	}
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+     @media screen and (min-width: 768px) {
+		align-items: center;
+        justify-content: center;
+	 	
+	 
+}
+	 @media screen and (min-width: 1200px) {
+	 	display: flex;
+	 	flex-direction: row;
+         gap: 0;
+	 }
 }
 .input-footer{
-    width: 358px;
+    width: 100%;
     height: 50px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -195,13 +207,11 @@ footer{
     &:hover{
     border-color: #2196F3;
    }
-   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
+   @media screen and (min-width: 480px) {
+    min-width: 450px;
 }
 @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
+ min-width: 358px;
 }
 }
 
@@ -214,7 +224,7 @@ footer{
 }
 .button-sent{
     background-color: #2196F3;
-    display: inline-flex;
+    display: flex;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
@@ -226,6 +236,7 @@ footer{
     padding: 10px 28px;
     border: none;
     margin-left: 12px;
+    width: 200px;
 }
 .button-sent-icon{
     fill: #FFFFFF;
@@ -241,16 +252,12 @@ footer{
   .footer-form{
     display: flex;
 	flex-direction: column;
-	gap: 12px;
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
+	gap: 20px;
+    align-items: center;
+	
 	@media screen and (min-width: 1200px) {
-		display: flex;
 		flex-direction: row;
-		
+		gap: 12px;
 	}
   }
   .footer-list-2{
