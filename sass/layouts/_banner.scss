@@ -3,7 +3,7 @@
     background-image: linear-gradient(to right, 
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
-    url(../images/Img\ \(16\)\ \(1\).jpg) ;
+    url(/images/banner-mob.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,6 +13,18 @@
     margin-right: auto;
     text-align: center;
     max-width: 1600px;
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, 
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(/images/banner-tab.jpg) ;
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right, 
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(/images/banner-deks.jpg) ;
+    }
 }
 .container-banner__title{
     color: #FFFFFF;

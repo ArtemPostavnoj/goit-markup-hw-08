@@ -476,7 +476,7 @@ body {
 
 .banner {
   background-color: #2F303A;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ \(16\)\ \(1\).jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -486,6 +486,16 @@ body {
   margin-right: auto;
   text-align: center;
   max-width: 1600px;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner-tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner-deks.jpg);
+  }
 }
 
 .container-banner__title {
