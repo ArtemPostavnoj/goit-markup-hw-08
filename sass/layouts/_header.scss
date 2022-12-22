@@ -39,9 +39,7 @@
     display: flex;
 	margin-right: auto;
 	align-items: center;
-	@media screen and (min-width:768px) {
-		display: flex;
-	}
+	
 }
 .navigation__link{
     position: relative;
@@ -59,7 +57,12 @@
      color: #2196F3;
     }
 }
-
+.header-contacts__item:hover .header-contacts__icon{
+    fill: #2196F3;
+} 
+.header-contacts__item:focus .header-contacts__icon{
+    fill: #2196F3;
+} 
 .header-contacts__item{
     color: #757575;
     text-decoration: none;
@@ -86,4 +89,6 @@
      fill: #2196F3;
     }
 }
- 
+.current{
+    color: #2196F3;
+}

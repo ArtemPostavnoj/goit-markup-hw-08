@@ -208,6 +208,10 @@ body {
   border-color: #2196F3;
 }
 
+.modal-textarea:focus {
+  border-color: #2196F3;
+}
+
 .button-close {
   position: absolute;
   right: 8px;
@@ -375,11 +379,6 @@ body {
   margin-right: auto;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .navigation {
-    display: flex;
-  }
-}
 
 .navigation__link {
   position: relative;
@@ -395,6 +394,14 @@ body {
 }
 .navigation__link:hover, .navigation__link:focus {
   color: #2196F3;
+}
+
+.header-contacts__item:hover .header-contacts__icon {
+  fill: #2196F3;
+}
+
+.header-contacts__item:focus .header-contacts__icon {
+  fill: #2196F3;
 }
 
 .header-contacts__item {
@@ -420,6 +427,10 @@ body {
 }
 .header-contacts__icon:hover, .header-contacts__icon:focus {
   fill: #2196F3;
+}
+
+.current {
+  color: #2196F3;
 }
 
 .banner {
@@ -704,6 +715,14 @@ body {
   .clients-item {
     width: calc((100% - 150px) / 6);
   }
+}
+
+.clients-item:hover .clients-icon {
+  fill: #2196F3;
+}
+
+.clients-item:focus .clients-icon {
+  fill: #2196F3;
 }
 
 .clients-link {

@@ -25,7 +25,12 @@
 		
 	}
 }
-
+.clients-item:hover .clients-icon{
+    fill: #2196F3;
+}
+.clients-item:focus .clients-icon{
+    fill: #2196F3;
+}
 .clients-link{
     width: 100%;
     height: 100%;
