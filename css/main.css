@@ -733,8 +733,7 @@ body {
 
 footer {
   background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
 }
 
 .logo-footer {
@@ -750,7 +749,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .logo-footer {
-    text-align: start;
+    display: inline-block;
   }
 }
 
@@ -766,16 +765,9 @@ footer {
 
 .footer-list {
   margin-bottom: 9px;
-  text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .footer-list {
-    text-align: start;
-  }
 }
 
 .address {
-  display: block;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 400;
@@ -801,6 +793,16 @@ footer {
 .contacts-footer:hover, .contacts-footer:focus {
   color: #2196F3;
 }
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    display: inline-block;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .button-filter {
   background: #F5F4FA;
@@ -821,17 +823,29 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.container-contacts-footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .container-contacts-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-contacts-footer {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -843,11 +857,11 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  text-align: center;
+  display: block;
 }
 @media screen and (min-width: 1200px) {
   .icons-footer {
-    text-align: start;
+    display: inline-block;
   }
 }
 
@@ -859,8 +873,6 @@ footer {
 .footer-soc-list {
   display: flex;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-soc-icon {
@@ -872,7 +884,7 @@ footer {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -897,17 +909,32 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-  text-align: center;
+  display: block;
 }
 @media screen and (min-width: 1200px) {
   .sign-title {
-    text-align: start;
+    display: inline-block;
   }
 }
 
 .sent-form {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .sent-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sent-form {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .input-footer {
@@ -923,6 +950,18 @@ footer {
 }
 .input-footer:focus, .input-footer:hover {
   border-color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .input-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input-footer {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .input-footer::-moz-placeholder {
@@ -981,13 +1020,19 @@ footer {
 .footer-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  gap: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
+    display: flex;
     flex-direction: row;
-    gap: 12px;
   }
 }
 

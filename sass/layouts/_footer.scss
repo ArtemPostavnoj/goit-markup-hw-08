@@ -1,8 +1,6 @@
 footer{
     background-color: #2F303A;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .logo-footer{
     color: #FFFFFF;
@@ -15,9 +13,8 @@ footer{
     margin-bottom: 20px;
     display: block;
     @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
-   
+		display: inline-block;
+	}
 }
 .logo-web-footer{
     color: #2196F3;
@@ -30,13 +27,8 @@ footer{
 }
 .footer-list{
     margin-bottom: 9px;
-    text-align: center;
-    @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
 }
 .address{
-    display: block;
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 400;
@@ -63,7 +55,14 @@ footer{
     &:focus{
     color: #2196F3;
    }
+   @media screen and (min-width: 1200px) {
+	display: inline-block;
+}
+}
 
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .button-filter{
     background: #F5F4FA;
@@ -114,11 +113,10 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    text-align: center;
+    display: block;
     @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
-  
+		display: inline-block;
+	}
 }
 .footer-soc-item{
     width: 44px;
@@ -127,7 +125,6 @@ footer{
 .footer-soc-list{
     display: flex;
     gap: 10px;
-
 }
 .footer-soc-icon{
     fill: #FFFFFF;
@@ -164,16 +161,25 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    text-align: center;
+    display: block;
     @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
-  
+		display: inline-block;
+	}
 }
 .sent-form{
     display: flex;
     flex-direction: column;
-
+    @media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-direction: row;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 .input-footer{
     width: 358px;
@@ -189,7 +195,14 @@ footer{
     &:hover{
     border-color: #2196F3;
    }
-
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+}
 }
 
 .input-footer::placeholder{
@@ -228,12 +241,17 @@ footer{
   .footer-form{
     display: flex;
 	flex-direction: column;
-	gap: 20px;
-	align-items: center;
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        gap: 12px;
-    }
+	gap: 12px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		
+	}
   }
   .footer-list-2{
     display: flex;
