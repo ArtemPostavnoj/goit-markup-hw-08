@@ -18,13 +18,18 @@
     color: #FFFFFF;
     text-align: center;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 696px;
     margin: 0 auto;
-   
+    @media screen and (min-width: 768px) {
+        width: 360px;
+      }
+   @media screen and (min-width: 1200px) {
+       font-size: 44px;
+       width: 696px;
+   }
 }
 .banner button{
     display: block;

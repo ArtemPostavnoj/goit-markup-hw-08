@@ -97,7 +97,7 @@ footer{
     // display: flex; 
     // align-items: baseline;
     // flex-direction: column;
-    // justify-content: center;
+     justify-content: center;
     @media screen and (min-width: 768px) {
 		display: flex;
         justify-content: space-around;
@@ -155,7 +155,9 @@ footer{
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .container-footer-icon{
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
     
     
     
@@ -244,7 +246,9 @@ footer{
 
 }
 .container-footer-sign{
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 .address a{
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;

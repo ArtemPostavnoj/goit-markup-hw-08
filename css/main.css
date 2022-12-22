@@ -356,7 +356,7 @@ body {
 
 .header-contacts {
   display: none;
-  margin-left: auto;
+  margin-left: auo;
 }
 @media screen and (min-width: 768px) {
   .header-contacts {
@@ -492,12 +492,22 @@ body {
   color: #FFFFFF;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container-banner__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-banner__title {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 
 .banner button {
@@ -890,6 +900,9 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.container-contacts-footer {
+  justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .container-contacts-footer {
     display: flex;
@@ -956,8 +969,10 @@ footer {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.container-footer-icon {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .container-footer-icon {
+    margin-left: 70px;
+  }
 }
 
 .sign-title {
@@ -1070,8 +1085,10 @@ footer {
   margin-left: 10px;
 }
 
-.container-footer-sign {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .container-footer-sign {
+    margin-left: auto;
+  }
 }
 
 .address a {
