@@ -477,12 +477,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
-    padding-bottom: 31px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .navigation__link {
-    padding-bottom: 36px;
+    padding-bottom: 37px;
   }
 }
 
@@ -509,6 +509,17 @@ body {
 }
 .header-contacts__item:hover, .header-contacts__item:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-phone {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-phone {
+    padding-top: 10px;
+  }
 }
 
 .header-contacts__icon {
