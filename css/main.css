@@ -103,7 +103,6 @@ body {
 
 .modal {
   width: 90%;
-  height: 90%;
   max-width: 450px;
   min-height: 609px;
   background-color: #FFFFFF;
@@ -117,7 +116,6 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -327,6 +325,19 @@ body {
 .label-checkbox {
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 14.06px;
+}
+@media screen and (min-width: 500px) {
+  .label-checkbox {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .container {
@@ -393,6 +404,7 @@ body {
     gap: 50px;
     text-align: center;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -609,6 +621,10 @@ body {
   line-height: 22px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: #2196F3;
+}
+
+.current {
   color: #2196F3;
 }
 
@@ -995,7 +1011,6 @@ footer {
 }
 
 .footer-list {
-  margin-bottom: 9px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -1155,6 +1170,7 @@ footer {
 
 .sent-form {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 12px;
   align-items: center;
@@ -1177,6 +1193,7 @@ footer {
 .input-footer {
   width: 100%;
   height: 50px;
+  min-width: 450px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1187,11 +1204,6 @@ footer {
 }
 .input-footer:focus, .input-footer:hover {
   border-color: #2196F3;
-}
-@media screen and (min-width: 480px) {
-  .input-footer {
-    min-width: 450px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .input-footer {
@@ -1272,7 +1284,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list-2 {
+    gap: 9px;
+  }
 }
 
 .button-filter {
