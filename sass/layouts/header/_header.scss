@@ -17,7 +17,7 @@
 }
 .header-contacts{
     display: none;
-    margin-left: auo;
+    margin-left: auto;
     @media screen and (min-width: 768px){
         display: flex;
         flex-direction: column;
@@ -27,6 +27,7 @@
         display: flex;
          gap: 50px;
          text-align: center;
+         align-items: center;
          flex-direction: row;
          justify-content: center;
     }
@@ -119,6 +120,7 @@
     }
 }
 .contact-phone{
+    text-align: center;
     @media screen and (min-width: 768px) {
         padding-top: 0;
     }
